@@ -348,6 +348,101 @@ header h1 {
     margin: 1rem 0;
 }
 
+/* Enhanced course link styling */
+.message-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    display: inline-block;
+    margin: 0.125rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.message-content a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.message-content a:hover {
+    color: #ffffff;
+    background: var(--primary-color);
+    border-color: var(--primary-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.message-content a:hover::before {
+    left: 100%;
+}
+
+.message-content a:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+}
+
+/* Special styling for course links that appear to be URLs */
+.message-content a[href*="deeplearning.ai"],
+.message-content a[href*="coursera"],
+.message-content a[href*="udemy"],
+.message-content a[href*="edx"] {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(168, 85, 247, 0.1));
+    border: 1px solid rgba(37, 99, 235, 0.3);
+    position: relative;
+    padding-left: 2rem;
+}
+
+.message-content a[href*="deeplearning.ai"]::after,
+.message-content a[href*="coursera"]::after,
+.message-content a[href*="udemy"]::after,
+.message-content a[href*="edx"]::after {
+    content: '🎓';
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9em;
+}
+
+/* Enhanced styling for long course links */
+.message-content a[href*="http"] {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Mobile responsive adjustments for links */
+@media (max-width: 768px) {
+    .message-content a {
+        padding: 0.35rem 0.6rem;
+        font-size: 0.9rem;
+        display: block;
+        margin: 0.25rem 0;
+        text-align: center;
+    }
+    
+    .message-content a[href*="deeplearning.ai"],
+    .message-content a[href*="coursera"],
+    .message-content a[href*="udemy"],
+    .message-content a[href*="edx"] {
+        padding-left: 2.5rem;
+        text-align: left;
+    }
+}
+
 /* Chat Input Container */
 .chat-input-container {
     display: flex;
