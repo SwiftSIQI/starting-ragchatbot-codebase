@@ -1,0 +1,25 @@
+Course Title: Introduction to Machine Learning
+Course Link: https://example.com/ml-course
+Course Instructor: Dr. Jane Smith
+
+Lesson 1: What is Machine Learning?
+Lesson Link: https://example.com/ml-course/lesson-1
+Machine learning is a subset of artificial intelligence that focuses on the development of algorithms that can learn and improve from data without being explicitly programmed. It enables computers to automatically learn and adapt through experience.
+
+There are three main types of machine learning:
+1. Supervised Learning - Learning with labeled examples
+2. Unsupervised Learning - Finding patterns in unlabeled data  
+3. Reinforcement Learning - Learning through trial and error with rewards
+
+Lesson 2: Linear Regression
+Lesson Link: https://example.com/ml-course/lesson-2
+Linear regression is one of the fundamental algorithms in machine learning. It attempts to model the relationship between two variables by fitting a linear equation to observed data.
+
+The equation for simple linear regression is: y = mx + b
+Where:
+- y is the dependent variable
+- x is the independent variable  
+- m is the slope
+- b is the y-intercept
+
+This algorithm is widely used for prediction and forecasting tasks.

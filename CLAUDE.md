@@ -90,3 +90,7 @@ Lesson Link: [url]
 ## Document Processing Behavior
 
 The system automatically loads documents from `docs/` directory on startup. Documents are processed incrementally (existing courses are not re-processed). Document processor expects structured format and extracts both metadata and content for dual-collection storage in ChromaDB.
+
+- use uv to run python files or add any dependencies
+
+- 不需要执行 `./run.sh` 命令, 我会自己手动执行它.
