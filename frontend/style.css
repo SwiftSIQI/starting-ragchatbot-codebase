@@ -608,7 +608,7 @@ details[open] .suggested-header::before {
     transform: rotate(90deg);
 }
 
-/* New Chat Button */
+/* New Chat Button - matches sidebar header styling */
 .new-chat-button {
     width: 100%;
     padding: 0.5rem 0;
@@ -623,6 +623,8 @@ details[open] .suggested-header::before {
     transition: color 0.2s ease;
     font-family: inherit;
     text-align: left;
+    outline: none;
+    list-style: none;
 }
 
 .new-chat-button:hover {
@@ -630,7 +632,6 @@ details[open] .suggested-header::before {
 }
 
 .new-chat-button:focus {
-    outline: none;
     color: var(--primary-color);
 }
 
