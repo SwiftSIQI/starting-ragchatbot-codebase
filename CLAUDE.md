@@ -20,6 +20,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Key variables: `ANTHROPIC_API_KEY`, `ANTHROPIC_BASE_URL` (for custom API endpoints like DeepSeek)
 - Configuration centralized in `backend/config.py` with dataclass pattern
 
+### Code Quality & Development
+- `./scripts/format.sh` - Format code with black and isort
+- `./scripts/lint.sh` - Run flake8 and mypy checks
+- `./scripts/quality.sh` - Run all formatting, linting, and tests
+- `uv run black backend/ main.py` - Format code directly with black
+- `uv run isort backend/ main.py` - Sort imports directly with isort
+- `uv run flake8 backend/ main.py` - Run flake8 linter
+- `uv run mypy backend/ main.py` - Run mypy type checker
+- `uv run pytest` - Run test suite
+
 ## Architecture Overview
 
 This is a **Retrieval-Augmented Generation (RAG) system** designed for educational course materials with a clean modular architecture:
